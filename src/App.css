@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 60px;
+  background-color: #22B14C;
+  color: #FFFFFF ; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;
+}
+
+.logo{
+  margin-right: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.colunas{
+  /*justify-content: space-between; 
+  align-items: center; 
+  padding: 20px;*/
+  display: flex;
+}
+
+.esquerdo{
+  width: 300px;
+}
+
+button{
+  color: #FFFFFF ;
+  background-color: #22B14C;
+  border-radius: 12px;
+  width: 80px;
+  height: 40px;
+}
+.centro{
+  width: 500px;
+}
+
+.cursomain {
+  border: 1px solid #C4C4C4;
+  color: #000000;
+  text-align: center;
+  width: 800px;
+}
+
+.cursoBorda{
+  border: 1px solid #C4C4C4;
+  width: 800px;
+}
+
+.logoSite{
+  border-left: 2px solid #22B14C;  
+  border-right: 2px solid #22B14C;
+  width: 70px;
+  height: 80px;
+}
+
+.comentarioLike{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garantir que o modal fique acima de outros elementos */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-error {
+  border: 1px solid red;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-button {
+  background-color: white;
+  border: 2px solid #22B14C;
+  color: #22B14C;
+}
+
+.cancel-button:hover {
+  background-color: #f1f1f1;
+}
+
+.login-button {
+  background-color: #22B14C;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #1d9a3d;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
